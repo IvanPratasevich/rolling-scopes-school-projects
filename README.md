@@ -1,1 +1,1 @@
-# rolling-scopes-school-projects
+# rolling-scopes-school

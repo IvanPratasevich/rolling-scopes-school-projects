@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Drum kit</title>
+  <link class="favicon" href="assets/favicon.ico" rel="icon">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <main class="main">
+    <div class="keys-container">
+      <div data-key="65" class="keys__block"  id="block-clap" >
+        <kbd class="key-font">A</kbd>
+        <span class="sound key-font">clap</span>
+      </div>
+      <div data-key="83" class="keys__block" id="block-hihat">
+        <kbd class="key-font">S</kbd>
+        <span class="sound key-font">hihat</span>
+      </div>
+      <div data-key="68" class="keys__block" id="block-kick">
+        <kbd class="key-font">D</kbd>
+        <span class="sound key-font">kick</span>
+      </div>
+      <div data-key="70" class="keys__block" id="block-openhat">
+        <kbd class="key-font">F</kbd>
+        <span class="sound key-font">openhat</span>
+      </div>
+      <div data-key="71" class="keys__block" id="block-boom">
+        <kbd class="key-font">G</kbd>
+        <span class="sound key-font">boom</span>
+      </div>
+      <div data-key="72" class="keys__block" id="block-ride">
+        <kbd class="key-font">H</kbd>
+        <span class="sound key-font">ride</span>
+      </div>
+      <div data-key="74" class="keys__block" id="block-snare">
+        <kbd class="key-font">J</kbd>
+        <span class="sound key-font">snare</span>
+      </div>
+      <div data-key="75" class="keys__block" id="block-tom">
+        <kbd class="key-font">K</kbd>
+        <span class="sound key-font">tom</span>
+      </div>
+      <div data-key="76" class="keys__block" id="block-tink">
+        <kbd class="key-font">L</kbd>
+        <span class="sound key-font">tink</span>
+      </div>
+    </div>
+    <audio data-key="65" id ="clap" src="assets/audio/clap.wav"></audio>
+    <audio data-key="83" id="hihat" src="assets/audio/hihat.wav"></audio>
+    <audio data-key="68" id="kick" src="assets/audio/kick.wav"></audio>
+    <audio data-key="70" id="openhat" src="assets/audio/openhat.wav"></audio>
+    <audio data-key="71" id="boom" src="assets/audio/boom.wav"></audio>
+    <audio data-key="72" id="ride"  src="assets/audio/ride.wav"></audio>
+    <audio data-key="74" id="snare" src="assets/audio/snare.wav"></audio>
+    <audio data-key="75" id="tom" src="assets/audio/tom.wav"></audio>
+    <audio data-key="76" id="tink" src="assets/audio/tink.wav"></audio>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

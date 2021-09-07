@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Photofilter</title>
+  <link class="favicon" href="assets/images/photofilter.ico" rel="icon">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Photofilter</h1>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="filter-block">
+        <div class="wrapper">
+          <label>Brightness</label>
+          <input class="range" data-filter="brightness" data-sizing="%" id="range" max="200" min="0" name="brightness" type="range" value="100">
+          <output class="brightnessCSS" id="brightness">100%</output>
+        </div>
+        <div class="wrapper">
+          <label>Contrast</label>
+          <input class="range" data-filter="contrast" data-sizing="%" id="range" max="200" min="0" type="range" value="100">
+          <output class="contrast" id="contrast">100%</output>
+        </div>
+        <div class="wrapper">
+          <label>Blur</label>
+          <input class="range" data-filter="blur" data-sizing="px" id="range" max="10" min="0" type="range" value="0">
+          <output class="blur" id="blur">0px</output>
+        </div>
+        <div class="wrapper">
+          <label>Hue-rotate</label>
+          <input class="range" data-filter="hue-rotate" data-sizing="deg" id="range" max="360" min="0" type="range" value="0">
+          <output class="hue-rotate" id="hue-rotate">0deg</output>
+        </div>
+        <div class="wrapper">
+          <label>Sepia</label>
+          <input class="range" data-filter="sepia" data-sizing="%" id="range" max="100" min="0" type="range" value="0">
+          <output class="sepia" id="sepia">0%</output>
+        </div>
+        <div class="wrapper">
+          <label>Invert</label>
+          <input class="range" data-filter="invert" data-sizing="%" id="range" max="100" min="0" type="range" value="0">
+          <output class="invert" id="invert">0%</output>
+        </div>
+        <div class="wrapper">
+          <label>Saturate</label>
+          <input class="range" data-filter="saturate" data-sizing="%" id="range" max="200" min="0" type="range" value="100">
+          <output class="saturate" id="saturate">100%</output>
+        </div>
+      </div>
+      <div class="image-block">
+        <img class="img" height="500" src="assets/images/monster.webp" width="500">
+        <div class="btn-container" id="btn-container">
+          <div class="css-filters-container">
+            <button class="btn first-btn" onclick="resetFilter()">Reset</button>
+            <button class="btn second-btn" id="copy-btn" onclick="copyCSS()">Copy CSS</button>
+            <div class="input-filters">
+              <input type="text" value="blur(0px) brightness(100%) contrast(100%) hue-rotate(0deg) sepia(0%) invert(0%) saturate(100%)" id="inputCSS" class="css-input" contenteditable="true">
+            </div>
+            <button class="btn next-image" id="chngbtn" onclick="changeImgAnimation()">Next Image</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="https://rs.school/js-stage0" target="_blank">
+      <img height="36" src="assets/images/rs_school_js.svg" width="100">
+    </a>
+    <h2 class="year">2021</h2>
+    <h2>
+      <a href="https://github.com/ivanpratasevich" target="_blank">Ivan Pratasevich</a>
+     </h2>
+  </footer>
+  <img src="assets/images/monster2.webp" class="img-download">
+  <img src="assets/images/monster3.webp" class="img-download">
+  <img src="assets/images/monster4.webp" class="img-download">
+  <img src="assets/images/monster5.webp" class="img-download">
+  <img src="assets/images/monster6.webp" class="img-download">
+  <img src="assets/images/monster7.webp" class="img-download">
+  <img src="assets/images/monster8.webp" class="img-download">
+  <img src="assets/images/eye-active.gif" class="img-download">
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

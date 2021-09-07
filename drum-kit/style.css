@@ -1,0 +1,78 @@
+body{
+  background-image: url(assets/images/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.main{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.keys-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1240px;
+  height: 110px;
+}
+.keys__block{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: 115px;
+  height: 100px;
+  border: 4px solid #3eb489;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transition: all 0.12s;
+  cursor: pointer;
+  user-select: none;
+}
+.key-font{
+  display: block;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 3rem;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+}
+.sound{
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: orange;
+}
+.playing{
+  transform: scale(1.1);
+  border-color: orange;
+  box-shadow: 0 0 8px #ffa500;
+}
+.musicalNote_style{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none; 
+  animation: scale 0.8s linear;
+}
+@keyframes scale {
+    0 {
+        transform: scale(1);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
